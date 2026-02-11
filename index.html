@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeTravel Agency — Voyagez à travers les Âges</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSEUR PERSONNALISÉ -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- HEADER -->
+<header id="header">
+  <nav class="nav-container">
+    <div class="logo">
+      <span class="logo-icon">⧗</span>
+      <span class="logo-text">TimeTravel Agency</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#about">L'Agence</a></li>
+      <li><a href="#contact" class="nav-cta">Réserver</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">— Agence de Voyage Temporel depuis 2024 —</div>
+    <h1 class="hero-title reveal">
+      <span class="line1">Traversez</span>
+      <span class="line2">les Âges</span>
+    </h1>
+    <p class="hero-subtitle reveal">
+      Vivez l'histoire de l'intérieur. Paris 1889, le Crétacé,<br>
+      Florence 1504 — des voyages impossibles devenus réels.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#destinations" class="btn-primary">Explorer les destinations</a>
+      <a href="#quiz" class="btn-secondary">Trouver mon voyage</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Défiler</span>
+    <div class="scroll-line"></div>
+  </div>
+  <div class="hero-ticker">
+    <div class="ticker-content">
+      <span>Paris 1889</span>
+      <span class="ticker-dot">◆</span>
+      <span>Crétacé −65M ans</span>
+      <span class="ticker-dot">◆</span>
+      <span>Florence 1504</span>
+      <span class="ticker-dot">◆</span>
+      <span>Paris 1889</span>
+      <span class="ticker-dot">◆</span>
+      <span>Crétacé −65M ans</span>
+      <span class="ticker-dot">◆</span>
+      <span>Florence 1504</span>
+      <span class="ticker-dot">◆</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="3">0</div>
+      <div class="stat-label">Destinations</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="65000000" data-suffix="M">0</div>
+      <div class="stat-label">Années d'histoire</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="99" data-suffix="%">0</div>
+      <div class="stat-label">Voyageurs satisfaits</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="24" data-suffix="h">0</div>
+      <div class="stat-label">Support temporel</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-text reveal">
+      <div class="section-tag">Notre Histoire</div>
+      <h2 class="section-title">L'Agence qui<br><em>repousse le temps</em></h2>
+      <p>TimeTravel Agency est née d'un rêve audacieux : rendre l'histoire vivante et accessible. Grâce à notre technologie de déplacement temporel brevetée, nous envoyons nos clients au cœur des époques les plus fascinantes de l'humanité.</p>
+      <p>Chaque voyage est soigneusement encadré par nos guides temporels certifiés, garantissant une expérience immersive et sécurisée, de la Belle Époque à la Préhistoire en passant par la Renaissance italienne.</p>
+      <a href="#contact" class="btn-outline">Nous contacter</a>
+    </div>
+    <div class="about-visual reveal">
+      <div class="about-card">
+        <div class="about-card-inner">
+          <div class="card-front">
+            <div class="portal-animation">
+              <div class="portal-ring r1"></div>
+              <div class="portal-ring r2"></div>
+              <div class="portal-ring r3"></div>
+              <div class="portal-core">⧗</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS SECTION -->
+<section class="destinations-section" id="destinations">
+  <div class="section-header reveal">
+    <div class="section-tag">Nos Voyages</div>
+    <h2 class="section-title">Choisissez votre époque</h2>
+    <p class="section-subtitle">Trois fenêtres sur des mondes disparus, chacune unique et inoubliable</p>
+  </div>
+  <div class="destinations-grid">
+
+    <!-- DESTINATION 1 : PARIS 1889 -->
+    <div class="dest-card reveal" data-dest="paris">
+      <div class="dest-image-container">
+        <div class="dest-image paris-bg">
+          <div class="dest-era-badge">1889</div>
+        </div>
+        <div class="dest-overlay"></div>
+      </div>
+      <div class="dest-content">
+        <div class="dest-tag">Belle Époque</div>
+        <h3 class="dest-title">Paris 1889</h3>
+        <p class="dest-description">L'Exposition Universelle bat son plein, la Tour Eiffel vient d'être érigée. Vivez les cafés, les cabarets et l'effervescence de la capitale de la modernité.</p>
+        <div class="dest-highlights">
+          <span>🗼 Tour Eiffel inaugurée</span>
+          <span>🎨 Mouvement impressionniste</span>
+          <span>🥂 Nuits au Moulin Rouge</span>
+        </div>
+        <div class="dest-footer">
+          <div class="dest-price">
+            <span class="price-label">À partir de</span>
+            <span class="price-amount">4 200 €</span>
+          </div>
+          <button class="btn-dest" onclick="openModal('paris')">Découvrir →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESTINATION 2 : CRÉTACÉ -->
+    <div class="dest-card reveal featured" data-dest="cretace">
+      <div class="dest-badge-featured">Populaire</div>
+      <div class="dest-image-container">
+        <div class="dest-image cretace-bg">
+          <div class="dest-era-badge">−65M ans</div>
+        </div>
+        <div class="dest-overlay"></div>
+      </div>
+      <div class="dest-content">
+        <div class="dest-tag">Préhistoire</div>
+        <h3 class="dest-title">Crétacé Supérieur</h3>
+        <p class="dest-description">Observez les dinosaures dans leur habitat naturel. Une nature sauvage incroyable, des paysages à couper le souffle et une faune que vous n'imaginez pas.</p>
+        <div class="dest-highlights">
+          <span>🦕 T-Rex en liberté</span>
+          <span>🌿 Végétation primitive</span>
+          <span>🦅 Ptérosaures géants</span>
+        </div>
+        <div class="dest-footer">
+          <div class="dest-price">
+            <span class="price-label">À partir de</span>
+            <span class="price-amount">8 900 €</span>
+          </div>
+          <button class="btn-dest" onclick="openModal('cretace')">Découvrir →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESTINATION 3 : FLORENCE 1504 -->
+    <div class="dest-card reveal" data-dest="florence">
+      <div class="dest-image-container">
+        <div class="dest-image florence-bg">
+          <div class="dest-era-badge">1504</div>
+        </div>
+        <div class="dest-overlay"></div>
+      </div>
+      <div class="dest-content">
+        <div class="dest-tag">Renaissance</div>
+        <h3 class="dest-title">Florence 1504</h3>
+        <p class="dest-description">Michel-Ange achève son David, Léonard de Vinci peint la Joconde. Plongez au cœur de la Renaissance italienne, entre art, pouvoir et beauté absolue.</p>
+        <div class="dest-highlights">
+          <span>🎭 Michel-Ange au travail</span>
+          <span>🏛️ Palais des Médicis</span>
+          <span>🎨 Ateliers d'artistes</span>
+        </div>
+        <div class="dest-footer">
+          <div class="dest-price">
+            <span class="price-label">À partir de</span>
+            <span class="price-amount">5 600 €</span>
+          </div>
+          <button class="btn-dest" onclick="openModal('florence')">Découvrir →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUIZ SECTION -->
+<section class="quiz-section" id="quiz">
+  <div class="quiz-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Personnalisation</div>
+      <h2 class="section-title">Quel voyageur êtes-vous ?</h2>
+      <p class="section-subtitle">Répondez à 4 questions pour découvrir votre destination idéale</p>
+    </div>
+    <div class="quiz-wrapper reveal" id="quizWrapper">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar" id="progressBar"></div>
+        <span class="quiz-progress-text" id="progressText">Question 1/4</span>
+      </div>
+      <div id="quizContent">
+        <!-- Questions injectées par JS -->
+      </div>
+    </div>
+    <div class="quiz-result hidden" id="quizResult">
+      <div class="result-icon" id="resultIcon">⧗</div>
+      <h3 id="resultTitle">Votre destination</h3>
+      <p id="resultDesc"></p>
+      <button class="btn-primary" onclick="resetQuiz()">Recommencer le quiz</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / RÉSERVATION -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-info reveal">
+      <div class="section-tag">Contact</div>
+      <h2 class="section-title">Réservez votre<br><em>voyage dans le temps</em></h2>
+      <p>Notre équipe de conseillers temporels est disponible pour vous accompagner dans la préparation de votre voyage. Chaque départ est personnalisé.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Siège temporel</strong>
+            <p>42 Rue du Temps, 75001 Paris</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Hotline temporelle</strong>
+            <p>+33 1 89 00 00 89</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <p>voyage@timetravel-agency.fr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <form id="reservationForm" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label>Nom complet</label>
+          <input type="text" placeholder="Jean Dupont" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="jean@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Destination</label>
+          <select id="destSelect">
+            <option value="">-- Choisir une époque --</option>
+            <option value="paris">Paris 1889 — Belle Époque</option>
+            <option value="cretace">Crétacé −65M ans — Préhistoire</option>
+            <option value="florence">Florence 1504 — Renaissance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Date de départ souhaitée</label>
+          <input type="date" />
+        </div>
+        <div class="form-group">
+          <label>Message (optionnel)</label>
+          <textarea placeholder="Vos questions ou demandes particulières..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Envoyer ma demande →</button>
+      </form>
+      <div class="form-success hidden" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3>Demande envoyée !</h3>
+        <p>Votre conseiller temporel vous contactera sous 24h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="logo">
+        <span class="logo-icon">⧗</span>
+        <span class="logo-text">TimeTravel Agency</span>
+      </div>
+      <p>L'agence qui fait de l'impossible votre quotidien. Voyagez dans le temps, créez des souvenirs éternels.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="#" onclick="openModal('paris')">Paris 1889</a></li>
+        <li><a href="#" onclick="openModal('cretace')">Crétacé −65M</a></li>
+        <li><a href="#" onclick="openModal('florence')">Florence 1504</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Agence</h4>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#quiz">Quiz voyage</a></li>
+        <li><a href="#contact">Réservation</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">CGV temporelles</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 TimeTravel Agency — Projet pédagogique M1/M2 Digital & IA</p>
+    <p>Propulsé par IA générative 🤖</p>
+  </div>
+</footer>
+
+<!-- MODAL DESTINATION -->
+<div class="modal-overlay hidden" id="modalOverlay" onclick="closeModal()">
+  <div class="modal" id="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-header" id="modalHeader"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- CHATBOT -->
+<div class="chatbot-container" id="chatbotContainer">
+  <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()" aria-label="Ouvrir le chatbot">
+    <span class="chatbot-icon-open">💬</span>
+    <span class="chatbot-icon-close hidden">✕</span>
+    <span class="chatbot-badge" id="chatbotBadge">1</span>
+  </button>
+  <div class="chatbot-window hidden" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">⧗</div>
+      <div class="chatbot-info">
+        <strong>Chronos</strong>
+        <span class="online-dot">● En ligne</span>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot">
+        <div class="message-bubble">
+          Bonjour ! Je suis <strong>Chronos</strong>, votre conseiller en voyages temporels 🏛️<br><br>
+          Je peux vous aider à choisir votre destination, répondre à vos questions sur nos voyages ou vous donner des informations pratiques.<br><br>
+          Comment puis-je vous aider aujourd'hui ?
+        </div>
+        <div class="message-time">maintenant</div>
+      </div>
+    </div>
+    <div class="chatbot-typing hidden" id="chatbotTyping">
+      <div class="typing-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="chatbot-suggestions" id="chatbotSuggestions">
+      <button onclick="sendSuggestion('Quelles destinations proposez-vous ?')">📍 Destinations</button>
+      <button onclick="sendSuggestion('Quels sont les prix ?')">💰 Tarifs</button>
+      <button onclick="sendSuggestion('Comment fonctionne le voyage temporel ?')">⧗ Comment ça marche ?</button>
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbotInput" placeholder="Posez votre question..." onkeypress="handleChatKeypress(event)" />
+      <button onclick="sendMessage()" class="send-btn">➤</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
